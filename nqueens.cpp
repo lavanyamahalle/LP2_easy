@@ -9,7 +9,6 @@ void printboard(vector<vector<char>>& board, int n) {
         cout << endl;
         }
 }
-
 bool issafe(vector<vector<char>>& board, int row, int col, int n) {
     // vertical
     for (int i = 0; i < row; i++) {
@@ -25,7 +24,6 @@ bool issafe(vector<vector<char>>& board, int row, int col, int n) {
     }
     return true;
 }
-
 void queensplace(vector<vector<char>>& board, int row, int n) {
     if (row == n) {
         printboard(board, n);
